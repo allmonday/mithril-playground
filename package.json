@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/allmonday/mithril-playground#readme",
   "dependencies": {
+    "@types/lodash": "^4.14.54",
     "mithril": "git@github.com:lhorie/mithril.js.git#3786373b587a7374e9df961d83a26baad06ef0d5"
   },
   "devDependencies": {

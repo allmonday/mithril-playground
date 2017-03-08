@@ -3,9 +3,8 @@ import {User} from "./model/User";
 import {UserList} from "./view/UserList";
 import {UserForm} from "./view/UserForm";
 import {Layout} from "./view/Layout";
-// m.mount(document.body, UserList)
 
-m.route(document.body, "/list", {
+m.route(<HTMLElement>document.querySelector("#app-mount"), "/list", {
     "/list": {
         render: function () {
             return m(Layout, m(UserList))

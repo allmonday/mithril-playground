@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run build & npm run sync",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sync": "browser-sync start --server -b 'google chrome' --startPath '/html/' --directory --files './bin/*.js', './html/*.html'",
+    "sync": "browser-sync start --server -b 'google chrome' --startPath '/html/' --directory --files=\"bin/*.js\"",
     "build": "webpack -w"
   },
   "repository": {

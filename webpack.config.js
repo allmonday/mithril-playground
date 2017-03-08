@@ -16,7 +16,7 @@ module.exports = {
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
     resolve: {
-        extensions: ['.ts', '.js']
+        extensions: ['.ts', '.js'],
     },
     module: {
         loaders: [
@@ -24,7 +24,7 @@ module.exports = {
             { 
                 test: /\.tsx?$/, 
                 loader: "awesome-typescript-loader",
-                exclude: path.resolve(__dirname, "node_modules")
+                exclude: /(node_modules|bower_components)/,
              }
         ]
     }

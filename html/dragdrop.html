@@ -9,10 +9,17 @@
         .drag-over {
             border: 1px solid red;
         }
-        .block {
+        .block, .default-block {
             width: 200px;
-            height: 200px;
+            height: 40px;
             border: 1px solid red;
+        }
+        .block-group {
+            margin: 0;
+            padding: 10px;
+        }
+        .default-block {
+            background: #ccc;
         }
         .hl {
             border-width: 2px;
@@ -21,8 +28,12 @@
 </head>
 <body>
     <h1>drag time from clock</h1>
-    <p id="clock"></p>
-    <div id="ta" class="block"></div>
+    <p id="clock" class="block"></p>
+    <ul class="block-group">
+        <li class="target block"></li>
+        <li class="target block"></li>
+        <li class="target block"></li>
+    </ul>
     <!--<textarea id="ta" name="" id="" cols="30" rows="10"></textarea>-->
     <script src="/bin/src_page_dragdrop_index.js"></script>
 </body>
